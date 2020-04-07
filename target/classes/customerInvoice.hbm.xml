@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.highradius.model.CustomerInvoice" table="customer_Invoice">
+<id name="id">
+	<column name="pk_CustomerInvoice" />  
+	<!-- <generated-value strategy="IDENTITY" /> --> 
+	<generator class="identity"/>  
+</id>
+
+<property name = "acct_doc_header_id" type = "java.lang.Integer">
+	<column name = "acct_doc_header_id"/>
+</property>   
+
+<property name = "account_id" type = "java.lang.Integer">
+	<column name = "account_id"/>
+</property>
+
+<property name = "document_number" type = "java.lang.Integer">
+	<column name = "document_number"/>
+</property>
+
+<property name = "document_number_norm" type = "java.lang.Integer">
+	<column name = "document_number_norm"/>
+</property>
+
+<property name = "company_code" type = "string">
+	<column name = "company_code"/>
+</property>
+
+<property name = "fiscal_year" type = "string">
+	<column name = "fiscal_year"/>
+</property>
+
+<property name = "document_line_number" type = "java.lang.Integer">
+	<column name = "document_line_number"/>
+</property>
+
+<property name = "doctype" type = "string">
+	<column name = "doctype"/>
+</property>
+
+<property name = "customer_number" type = "java.lang.Integer">
+	<column name = "customer_number"/>
+</property>
+
+<property name = "customer_number_norm" type = "java.lang.Integer">
+	<column name = "customer_number_norm"/>
+</property>
+
+<property name = "fk_customer_map_id" type = "java.lang.Integer">
+	<column name = "fk_customer_map_id"/>
+</property>
+
+<property name = "customer_name" type = "string">
+	<column name = "customer_name"/>
+</property>
+
+<property name = "division" type = "string">
+	<column name = "division"/>
+</property>
+
+<property name = "document_date" type = "date">
+	<column name = "document_date"/>
+</property>
+
+<property name = "document_date_norm" type = "date">
+	<column name = "document_date_norm"/>
+</property>
+
+<property name = "posting_date" type = "date">
+	<column name = "posting_date"/>
+</property>
+
+<property name = "posting_date_norm" type = "date">
+	<column name = "posting_date_norm"/>
+</property>
+
+<property name = "posting_key" type = "string">
+	<column name = "posting_key"/>
+</property>
+
+<property name = "due_date" type = "date">
+	<column name = "due_date"/>
+</property>
+
+<property name = "due_date_norm" type = "date">
+	<column name = "due_date_norm"/>
+</property>
+
+<property name = "order_date" type = "date">
+	<column name = "order_date"/>
+</property>
+
+<property name = "order_date_norm" type = "date">
+	<column name = "order_date_norm"/>
+</property>
+
+<property name = "invoice_number" type = "java.lang.Integer">
+	<column name = "invoice_number"/>
+</property>
+
+<property name = "invoice_number_norm" type = "java.lang.Integer">
+	<column name = "invoice_number_norm"/>
+</property>
+
+<property name = "invoice_date" type = "date">
+	<column name = "invoice_date"/>
+</property>
+
+<property name = "invoice_date_norm" type = "date">
+	<column name = "invoice_date_norm"/>
+</property>
+
+<property name = "open_amount" type = "float">
+	<column name = "open_amount"/>
+</property>
+
+<property name = "open_amount_norm" type = "float">
+	<column name = "open_amount_norm"/>
+</property>
+
+<property name = "payment_terms" type = "java.lang.Integer">
+	<column name = "payment_terms"/>
+</property>
+
+<property name = "business_area" type = "string">
+	<column name = "business_area"/>
+</property>
+
+<property name = "ship_date" type = "date">
+	<column name = "ship_date"/>
+</property>
+
+<property name = "ship_to" type = "string">
+	<column name = "ship_to"/>
+</property>
+
+<property name = "clearing_date" type = "date">
+	<column name = "clearing_date"/>
+</property>
+
+<property name = "clearing_date_norm" type = "date">
+	<column name = "clearing_date_norm"/>
+</property>
+
+<property name = "reason_code" type = "string">
+	<column name = "reason_code"/>
+</property>
+
+<property name = "isOpen" type = "int">
+	<column name = "isOpen"/>
+</property>
+
+<property name = "discount_due_date_norm" type = "date">
+	<column name = "discount_due_date_norm"/>
+</property>
+
+<property name = "debit_credit_indicator" type = "string">
+	<column name = "debit_credit_indicator"/>
+</property>
+
+<property name = "payment_method" type = "string">
+	<column name = "payment_method"/>
+</property>
+
+<property name = "document_creation_date" type = "date">
+	<column name = "document_creation_date"/>
+</property>
+
+<property name = "invoice_amount_doc_currency" type = "float">
+	<column name = "invoice_amount_doc_currency"/>
+</property>
+
+<property name = "document_id" type = "int">
+	<column name = "document_id"/>
+</property>
+
+<property name = "actual_open_amount" type = "float">
+	<column name = "actual_open_amount"/>
+</property>
+
+<property name = "paid_amount" type = "float">
+	<column name = "paid_amount"/>
+</property>
+
+<property name = "dayspast_due" type = "int">
+	<column name = "dayspast_due"/>
+</property>
+
+<property name = "invoice_age" type = "int">
+	<column name = "invoice_age"/>
+</property>
+
+<property name = "disputed_amount" type = "float">
+	<column name = "disputed_amount"/>
+</property>
+
+</class>  
+</hibernate-mapping>
